@@ -46,9 +46,8 @@ body{
     animation: marquee 40s linear infinite;
     width: max-content; /* Adjust to match the width of the content */
     transform: translateX(100%);
-    color: rgb(79, 60, 34); /* Color for the marquee text */
+    color:antiquewhite; /* Color for the marquee text */
     padding: 1rem;
-    background-color: antiquewhite;
 }
 
 @keyframes marquee {
