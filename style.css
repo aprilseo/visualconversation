@@ -1,0 +1,122 @@
+html{
+    margin:0;
+    font-size:10px;
+    box-sizing: border-box;
+    color:rgb(74, 74, 74);
+    font-family:"BhuTuka Expanded One", serif;;
+}
+
+body{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.background{
+    width:100vw;
+    height:100vh;
+}
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.marquee-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the container spans the entire width */
+    height: 4rem; /* Adjust the height as needed */
+    overflow: hidden;
+    font-family:Arial, Helvetica, sans-serif;
+    z-index: 3;
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 40s linear infinite;
+    width: max-content; /* Adjust to match the width of the content */
+    transform: translateX(100%);
+    color: rgb(79, 60, 34); /* Color for the marquee text */
+    padding: 1rem;
+    background-color: antiquewhite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Black with 30% opacity */
+    z-index:2; /* Ensure it's above other content */
+    display: none; /* Initially hidden */
+}
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; 
+    height: 100%;
+    padding: 3rem; 
+    box-sizing: border-box;
+    color: white; 
+    text-align: center;
+    display:flex;
+    z-index: 3;
+}
+
+#text-container {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 2rem;
+    padding: 1rem; /* Add padding for better readability */
+}
+
+.baxter, .bella {
+    margin-right: 1.5rem; /* Adjust margin as needed */
+    font-weight: bold;
+}
+
+.message {
+    display: inline-block; /* Ensure inline display for proper alignment */
+    background-color:rgb(49, 142, 166); /* Add background color to text */
+    padding: 0.5rem; /* Add padding for better readability */
+    border-radius: 0.5rem;
+   
+}
+
+.baxter-message{
+    background-color: rgb(173, 89, 174);
+    border-radius: 0.5rem;
+    padding:0.5rem;
+}
+
+.bella-message{
+    background-color: rgb(49, 142, 166);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#text-display {
+    margin-top: 4.9rem;
+    text-align: left; /* Align text to the left */
+    padding: 1rem; /* Add padding for better readability */
+}
+
+.special-baxter-message {
+    line-height: 1.5;
+}
